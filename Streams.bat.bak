@@ -32,6 +32,8 @@ ECHO -------------------------------------
 ECHO 1.  ShimoroShow (GoodGame)
 ECHO 2.  RTd online  (YouTube)
 ECHO 3.  War Thunder (twitch.tv)
+ECHO -------------------------------------
+ECHO 9. Custom-built
 ECHO ==========PRESS 'Q' TO QUIT==========
 ECHO.
 
@@ -41,6 +43,7 @@ SET /P INPUT=Please select a number:
 IF /I '%INPUT%'=='1' GOTO Selection21
 IF /I '%INPUT%'=='2' GOTO Selection22
 IF /I '%INPUT%'=='3' GOTO Selection23
+IF /I '%INPUT%'=='9' GOTO Selection29
 IF /I '%INPUT%'=='Q' GOTO Quit
 
 GOTO ERROR
@@ -97,6 +100,14 @@ GOTO MENU3
 
 SET FROM1=http://www.twitch.tv/darthclide
 GOTO MENU3
+
+:Selection29
+
+SET FROM1=http://www.twitch.tv/darthclide
+SET /P FROM1=Please enter URL:
+
+GOTO MENU3
+
 :Selection31
 
 SET Q1=360p
