@@ -56,8 +56,6 @@ ECHO 1.  360p
 ECHO 2.  480p
 ECHO 3.  720p
 ECHO 4.  1080p
-ECHO -------------------------------------
-ECHO 5.  BEST (For twitch.tv only)
 ECHO ==========PRESS 'Q' TO QUIT==========
 ECHO.
 
@@ -68,7 +66,6 @@ IF /I '%INPUT%'=='1' GOTO Selection31
 IF /I '%INPUT%'=='2' GOTO Selection32
 IF /I '%INPUT%'=='3' GOTO Selection33
 IF /I '%INPUT%'=='4' GOTO Selection34
-IF /I '%INPUT%'=='5' GOTO Selection35
 IF /I '%INPUT%'=='Q' GOTO Quit
 
 GOTO ERROR
@@ -115,11 +112,6 @@ GOTO PLAY
 :Selection34
 
 SET Q1=1080p
-GOTO PLAY
-
-:Selection35
-
-SET Q1=best
 GOTO PLAY
 
 :PLAY
