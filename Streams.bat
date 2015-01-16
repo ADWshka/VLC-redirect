@@ -33,6 +33,7 @@ ECHO 1.  ShimoroShow (GoodGame)
 ECHO 2.  RTd online  (YouTube)
 ECHO 3.  War Thunder (twitch.tv)
 ECHO 4.  EVE Online (twitch.tv)
+ECHO 5.  Soaryn (twitch.tv)
 ECHO -------------------------------------
 ECHO 9. Custom-built
 ECHO ==========PRESS 'Q' TO QUIT==========
@@ -45,6 +46,7 @@ IF /I '%INPUT%'=='1' GOTO Selection21
 IF /I '%INPUT%'=='2' GOTO Selection22
 IF /I '%INPUT%'=='3' GOTO Selection23
 IF /I '%INPUT%'=='4' GOTO Selection24
+IF /I '%INPUT%'=='5' GOTO Selection25
 IF /I '%INPUT%'=='9' GOTO Selection29
 IF /I '%INPUT%'=='Q' GOTO Quit
 
@@ -107,6 +109,12 @@ GOTO MENU3
 
 SET FROM1=http://www.twitch.tv/sardcaid
 GOTO MENU3
+
+:Selection25
+
+SET FROM1=http://www.twitch.tv/soaryn
+GOTO MENU3
+
 
 :Selection29
 
